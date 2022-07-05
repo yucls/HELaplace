@@ -117,7 +117,7 @@ if __name__ == '__main__':
     if cv2.waitKey(0) == 27:
         cv2.destroyAllWindows()
 
-    #拉普拉斯算子
+    #Laplace
     def laplacian(imagee):
         kernel = np.array([[0, -1, 0], [-1, 5, -1], [0, -1, 0]])
         image_lap = cv2.filter2D(imagee, cv2.CV_8UC3, kernel)
